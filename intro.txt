@@ -1,0 +1,23 @@
+Web Development:
+
+FrontEnd:- HTML,CSS,JS
+BackEnd:- Node JS,SQL,coneecitvity,API
+FullStack:- FrontEnd + BackEnd
+
+
+------------------------------------------------------------------------
+
+FrontEnd :- 
+HTML Completed
+CSS : Cascading Style Sheet
+
+
+CSS :- Pure CSS --> Inline,Internal,External
+        Framework --> Tailwind CSS , BootStrap etc....
+
+
+Pure Css :- Inline --> style Attribute
+            Internal --> <style> css properties</style>
+            External --> .css(extension) file save 
+
+
