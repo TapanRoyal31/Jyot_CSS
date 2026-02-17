@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      background: #212121;
+    }
+    /* ----------------------------------------------------------------------------------------------------------------  */
+    /* 
+    id selector : # 
+    class selector : .
+    attribute selector : html tag name and [attribute]
+    element selector : html tag name
+
+
+    */
+
+    /* #id1{
+        color: red;
+    }
+
+    .class1{
+        color: blue;
+    } */
+
+    /* p[title='selector']{
+        color: blueviolet;
+    }
+
+    p{
+        color: aqua;
+    } */
+    /* 
+    Combinators : 
+    ---------------------------------------------------------------
+    Group selector : , 
+    
+    
+    */
+    /* #id1{
+        color: red;
+    }
+    .class1{
+        color: red;
+        } 
+    #id1 , .class1{
+        color: red;
+    }
+    */
+  </style>
+  <body>
+    <!-- In Priority order -->
+    <p id="id1">Id selector</p>
+    <p class="class1">Class selector</p>
+    <p title="selector">attribute selector</p>
+    <h1>element selector</h1>
+  </body>
+</html>
