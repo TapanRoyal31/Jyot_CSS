@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+
+
+
+body{
+    background: #212121;
+    color: aliceblue;
+
+}
+
+/*
+    Universal selector : *
+    Descendant selector : .parent p
+    child selectors : .parent > p
+    next sibling : .child + p
+    Subsequent-sibling combinator : .child ~ p
+*/
+
+/* *{
+        border: 2px solid red; 
+} */
+
+/* .parent p{
+    color: blue;
+} */
+
+/* .parent > p{
+    color: aqua;
+} */
+
+/* .child ~ p{
+    color:red;
+} */
+
+/* .child + p{
+    color: blueviolet;
+} */
+
+</style>
+<body>
+    <div class="parent">
+        <div class="child">
+            <p>grand child</p>
+        </div>
+        <p>parent child</p>
+        <p>sibling</p>
+        <h1>hello</h1>
+    </div>
+</body>
+</html>
