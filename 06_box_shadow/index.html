@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box shadow</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: #212121;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+    .box{
+        color: antiquewhite;
+        height: 50px;
+        width: 200px;
+        /* border: 2px solid red; */
+        box-shadow: 0px 0px 30px 20px red; 
+    }
+    .box1{
+        box-shadow: inset 2px 2px 10px yellow; /* x-axis y-axis blur strongness color */
+    }
+</style>
+<body>
+    <div class="box">
+        CSS Box shadow
+    </div> 
+    <div class="box box1">
+        CSS Box shadow
+    </div>
+</body>
+</html>
