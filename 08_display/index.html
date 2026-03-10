@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+</head>
+    <style>
+        /* 
+            div is a block element, it will take the full width of the container and start on a new line.
+            span is an inline element, it will only take the width of its content and will not start on a new line.
+        */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+            div{
+                display: inline-block;
+                background-color: rosybrown;
+                height: 200px;
+                width: 200px;
+                border: 1px solid black;
+            }
+
+            span{
+                display: inline-block;
+                background-color: lightblue;
+                height: 200px;
+                width: 200px;
+                border: 1px solid black;
+                /* padding: 10px; */
+            }
+    </style>
+<body>
+    <div>Div contsiner</div><div>another div</div>
+    <span>span container</span><span>another span</span>
+
+    <table>
+        <thead>
+            <tr><th>Header 1</th><th>Header 2</th></tr>
+        </thead>
+    </table>
+</body>
+</html>
