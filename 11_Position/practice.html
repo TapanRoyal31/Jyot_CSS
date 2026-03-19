@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>position</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: #212121;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+    .card {
+      height: 400px;
+      background-color: white;
+      border: 2px solid black;
+      border-radius: 20px;
+      padding: 3rem;
+      position: relative;
+    }
+    img {
+      margin-bottom: 1.2rem;
+    }
+    .badge {
+      background-color: blue;
+      padding: 10px;
+      width: fit-content;
+      border-radius: 10px;
+      color: white;
+      position: absolute;
+      right: 20px;
+      top: 20px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 30px;
+      margin-top: 20px;
+      align-items: center;
+    }
+
+    .buy {
+      background-color: orangered;
+      border-radius: 20px;
+      padding: 0.5rem;
+      color: white;
+      width: fit-content;
+      font-size: large;
+    }
+  </style>
+  <body>
+    <div class="card">
+      <span class="badge">New</span>
+      <img src="shoes.png" alt="shoes" height="200" width="200" />
+      <p>Fila Men Black Fx I Shoes</p>
+      <p>MRP: Rs. 6,999.00</p>
+      <p>Inclusive of all taxes.</p>
+      <div class="buttons">
+        <button class="buy" type="button">Buy Now</button>
+        <div>Add To Cart</div>
+      </div>
+    </div>
+    <div class="card">
+      <span class="badge">New</span>
+      <img src="shoes.png" alt="shoes" height="200" width="200" />
+      <p>Fila Men Black Fx I Shoes</p>
+      <p>MRP: Rs. 6,999.00</p>
+      <p>Inclusive of all taxes.</p>
+      <div class="buttons">
+        <button class="buy" type="button">Buy Now</button>
+        <div>Add To Cart</div>
+      </div>
+    </div>
+    <div class="card">
+      <span class="badge">New</span>
+      <img src="shoes.png" alt="shoes" height="200" width="200" />
+      <p>Fila Men Black Fx I Shoes</p>
+      <p>MRP: Rs. 6,999.00</p>
+      <p>Inclusive of all taxes.</p>
+      <div class="buttons">
+        <button class="buy" type="button">Buy Now</button>
+        <div>Add To Cart</div>
+      </div>
+    </div>
+  </body>
+</html>

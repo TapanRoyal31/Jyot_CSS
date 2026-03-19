@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /*
+    position :  static   :- default position of element, it will be positioned according to normal flow of the page
+                relative :- position of element is calculated with respect to its normal position
+                absolute :- position of element is calculated with respect to nearest parent which has position relative, 
+                        if no parent has position relative then it will be calculated with respect to body
+                fixed    :- position of element is calculated with respect to viewport
+                sticky   :- position of element is calculated with respect to nearest parent which has position relative, 
+                        if no parent has position relative then it will be calculated with respect to body, 
+                        but it will be fixed when we scroll the page and it reaches the top of the page
+    */
+    .parent {
+        padding: 5px;
+        background-color: #00AAFF;
+    }
+
+    .child {
+        padding: 5px;
+    }
+
+    .child-one {
+        background-color: rgb(116, 255, 116);
+    }
+
+    .child-two {
+        background-color: rgb(248, 117, 117);
+    }
+
+    .child-three {
+        background-color: rgb(255, 116, 232);
+    }
+</style>
+<link rel="stylesheet" href="style.css">
+
+<body>
+    <div class="parent">
+        Parent
+        <div class="child-one child">One</div>
+        <div class="child-two child">Two</div>
+        <div class="child-three child">Three</div>
+    </div>
+</body>
+
+</html>
