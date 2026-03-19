@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css Layout</title>
+  </head>
+  <!-- 5 rows 8 columns -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .container {
+      height: 400px;
+      width: 700px;
+      border: 1px solid red;
+      display: grid;
+      gap: 10px;
+      grid-template-areas:
+        "item1 item2 item2 item2 item2 item2 item2 item2"
+        "item1 item3 item4 item4 item4 item4 item4 item4"
+        "item1 item3 item4 item4 item4 item4 item4 item4"
+        "container container item4 item4 item4 item4 item4 item4"
+        "item9 item10 item10 item10 item10 item10 item10 item10";
+    }
+    .item1 {
+      background-color: lightblue;
+      grid-area: item1;
+    }
+    .item2 {
+      background-color: lightgreen;
+      grid-area: item2;
+    }
+    .item3 {
+      background-color: orangered;
+      grid-area: item3;
+    }
+    .item4 {
+      background-color: lightcoral;
+      grid-area: item4;
+    }
+    .item5 {
+      background-color: lightcoral;
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+    }
+    .item6 {
+      background-color: lightgreen;
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+    }
+    .item7 {
+      background-color: lightblue;
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+    }
+    .item8 {
+      background-color: hotpink;
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+    }
+    .item9 {
+      background-color: lightskyblue;
+      grid-area: item9;
+    }
+    .item10 {
+      background-color: orangered;
+      grid-area: item10;
+    }
+    .container1 {
+      grid-area: container;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="item1"></div>
+      <div class="item2"></div>
+      <div class="item3"></div>
+      <div class="item4"></div>
+      <div class="container1">
+        <div class="item5"></div>
+        <div class="item6"></div>
+        <div class="item7"></div>
+        <div class="item8"></div>
+      </div>
+      <div class="item9"></div>
+      <div class="item10"></div>
+    </div>
+  </body>
+</html>
