@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #212121;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  height: 70%;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #343699;
+  border-radius: 20px;
+  padding: 20px;
+  background: #2f3078;
+}
+.start {
+  display: flex;
+  height: max-content;
+  width: 100%;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+.go {
+  font-size: x-large;
+  color: white;
+}
+
+.offer {
+  color: #aab2ff;
+  background-color: #444378;
+  border-radius: 20px;
+  font-size: small;
+  padding: 5px;
+}
+
+.second {
+  display: flex;
+  gap: 100px;
+
+  .text {
+    font-size: x-small;
+    margin: 10px;
+  }
+}
+
+.price {
+  font-size: xx-large;
+}
