@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      background-color: #212121;
+      height: 100vh;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+    }
+    .box {
+      border: 1px solid red;
+      height: 250px;
+      width: 250px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 24px;
+      /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+      animation: rotate 2s linear 0s infinite alternate;
+      animation-fill-mode: forwards;
+      animation-play-state: running;
+    }
+    
+    .box:hover{
+        animation-play-state: paused;
+    }
+
+    @keyframes rotate {
+      from {
+        transform:translate(20px) rotate(0);
+        border: 1px solid yellow;
+        border-radius: 0%;
+      }
+      to {
+        transform:translate(500px) rotate(360deg);
+        border: 1px solid red;
+        border-radius: 50%;
+      }
+    }
+  </style>
+  <body>
+    <div class="box">Animation Box</div>
+  </body>
+</html>
